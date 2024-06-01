@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#96a5df</color>
+    <color name="textColor">#e0e6f5</color>
+    <color name="textInverseColor">#0a101f</color>
+    <color name="colorBg">#09090b</color>
+    <color name="cardBg">#0e101a</color>
+    <color name="colorAccent">#21316B</color>
+    <color name="transparent">#0096A5DF</color>
+    <color name="textColorTransparent">#B2E0E6F5</color>
+    <color name="textColorTransparent10">#1AE0E6F5</color>
+    <color name="inputBox">#adb1bd</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/inputBox</color>
+</resources>

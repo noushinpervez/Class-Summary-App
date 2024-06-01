@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="center"
+            android:text="Signup"
+            android:textColor="@color/textInverseColor"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorBg"
+            android:padding="16dp">
+
+            <TableRow>
+                <TextView
+                    android:text="Name"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Email"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Phone"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="User Id"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etUserId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Password"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Re-enter Password"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=":"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etRPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <CheckBox
+                android:id="@+id/cbRemUserId"
+                android:layout_marginTop="16dp"
+                android:text="Remember User ID"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbRemPass"
+                android:text="Remember Password"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.7"
+                    android:text="Already have account?"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="Login"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Exit"
+                android:textColor="@color/textInverseColor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/textInverseColor"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Go"
+                android:textColor="@color/textInverseColor"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
